@@ -1,14 +1,19 @@
-
 .nav-menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e25f5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px;
     list-style: none;
-    padding: 0;
     margin: 0;
-    justify-content: center;
-    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
-
 
 header {
     margin-bottom: 20px;
@@ -68,4 +73,26 @@ figure figcaption {
         display: flex;
         flex-direction: row;
     }
+    .nav-menu .nav-heading {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: auto;
+        text-align: left;
+        display: block;
+    }
+}
+.nav-menu li {
+    margin: 0 10px;
+}
+
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
 }
