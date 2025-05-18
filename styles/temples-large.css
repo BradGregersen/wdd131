@@ -81,18 +81,18 @@ figure figcaption {
         text-align: left;
         display: block;
     }
-}
-.nav-menu li {
-    margin: 0 10px;
-}
-
-
-.nav-menu li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 18px;
-    font-weight: bold;
+    .nav-menu li {
+        margin: 0 10px;
+    }
+    
+    
+    .nav-menu li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
