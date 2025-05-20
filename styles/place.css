@@ -1,0 +1,131 @@
+:root {
+    --font-family: Arial, sans-serif;
+    --line-height: 1.6;
+    --color-white: #ffffff;
+    --color-navy-blue: #002868;
+    --color-red: #bf0a30;
+    --padding-default: 20px;
+    --border-width: 2px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: var(--line-height);
+    background-color: var(--color-white);
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--color-navy-blue);
+}
+
+.top-section {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: var(--padding-default) 0;
+}
+
+.image-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 5px solid var(--color-navy-blue);
+}
+
+.data-section, .weather-section {
+    padding: var(--padding-default);
+    background-color: var(--color-white);
+    margin: 10px 0;
+    border: var(--border-width) solid var(--color-red);
+    color: var(--color-navy-blue);
+}
+
+.data-chart, .weather-chart {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.data-row, .weather-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    color: var(--color-navy-blue);
+}
+
+.label {
+    font-weight: bold;
+    color: var(--color-red);
+}
+
+.footer-section {
+    text-align: center;
+    background-color: var(--color-navy-blue);
+    color: var(--color-white);
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    padding: var(--padding-default);
+    background-color: var(--color-red);
+    font-size: 14px;
+    color: var(--color-white);
+}
+
+
+@media (min-width: 770px) {
+    .container {
+        display: flex;
+        position: relative;
+    }
+
+    .image-section {
+        flex: 1;
+        position: relative;
+    }
+
+    .data-section, .weather-section {
+        position: absolute;
+        width: 35%;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        box-shadow: var(--box-shadow);
+        border: var(--border-width) solid var(--color-red);
+    }
+
+    .data-section {
+        top: 5%;
+        left: 5%;
+    }
+
+    .weather-section {
+        bottom: 5%;
+        right: 5%;
+    }
+
+.weather-section h2::after {
+    content: "";
+    display: block;
+    margin: 10px auto 0;
+    width: 75px;
+    height: 75px;
+    background-image: url("../images/partly-cloudy.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+}
+
+
+.weather-section .icon {
+    display: block;
+    margin: 0 auto 1em;
+    width: 75px;
+    height: auto;
+}

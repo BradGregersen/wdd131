@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage describing the country I live in">
+    <title>The United States of America</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header class="top-section">
+        <h1>Montana, United States of America</h1>
+    </header>
+
+
+    <div class="container">
+        <div class="image-section">
+            <picture>
+                <source srcset="images/Grizzly-bear-2-small.webp" media="(max-width: 600px)">
+                <source srcset="images/Grizzly-bear-2-large.webp" media="(min-width: 1201px)">
+                <img src="images/Grizzly-bear-2-large.webp" alt="Grizzly Bear">
+            </picture>
+        </div>
+
+        <section class="data-section">
+            <h2>Data</h2>
+            <div class="data-chart">
+                <div class="data-row">
+                    <span class="label">Area:</span>
+                    <span class="value">147,040 mi²</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Population:</span>
+                    <span class="value">1.137 million (2024)</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Capitol:</span>
+                    <span class="value">Helena</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Languages:</span>
+                    <span class="value">English, Spanish</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Currency:</span>
+                    <span class="value">Dollar</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Time zone:</span>
+                    <span class="value">Mountain Daylight Time</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Calling code:</span>
+                    <span class="value">406</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Internet TLD:</span>
+                    <span class="value">.US</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <div class="weather-chart">
+                <div class="weather-row">
+                    <span class="label">Temperature:</span>
+                    <span class="value">45°F</span>
+                </div>
+                <div class="weather-row">
+                    <span class="label">Condition:</span>
+                    <span class="value">Partly cloudy</span>
+                </div>
+                <div class="weather-row">
+                    <span class="label">Wind speed:</span>
+                    <span class="value">30 mph</span>
+                </div>
+                <div class="weather-row">
+                    <span class="label">Wind chill:</span>
+                    <span class="value">""</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bradley Gregersen, Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
