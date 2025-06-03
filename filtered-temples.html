@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A photo album of temples">
+    <title>Temple Album</title>
+
+    <link rel="stylesheet" href="styles/temples-filtered.css ">
+    <link rel="stylesheet" href="styles/temples-large-filtered.css" media="screen and (min-width: 1024px)">
+
+    <script src="scripts/temples-filtered.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-menu">
+                <li class="nav-heading">Temple Album</li>
+                <li><button id="home">Home</button></li>
+                <li><button id="old">Old</button></li>
+                <li><button id="new">New</button></li>
+                <li><button id="large">Large</button></li>
+                <li><button id="small">Small</button></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div id="temple-cards" class="image-grid">
+
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bradley Gregersen, Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
