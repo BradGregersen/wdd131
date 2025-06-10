@@ -1,0 +1,36 @@
+body {
+    background-color: #F5F5F5;
+    color: #222;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #1A237E;
+  }
+  
+  #logo {
+    width: 80px;
+    vertical-align: middle;
+  }
+  
+  .color-sample {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+  }
+  .primary { background: #1A237E; }
+  .secondary { background: #2f00ff; }
+  .background { background: #F5F5F5; border: 1px solid #bbb; }
+  
+  .wireframe-img {
+    max-width: 300px;
+    border: 1px solid #ccc;
+    margin: 1rem 0;
+  }
