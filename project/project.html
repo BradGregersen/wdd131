@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The State of Robotics Today</title>
+    <link rel="stylesheet" href="styles/project.css">
+
+</head>
+<body class="state-page">
+        <header>
+            <nav>
+                <button class="hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+                <div class="nav-links">
+                    <a href="project.html" class="current-page">The State of Robotics Today</a>
+                    <a href="project-future.html">The Future of Robotics</a>
+                    <a href="project-history.html">The History of Robotics</a>
+                    
+                </div>
+            </nav>
+            <h1>The state of Robotics today</h1>
+        </header>
+    <main>
+        <section class="text-area">
+            <h2>
+                Information About The Current State Of Robotics
+            </h2>
+            <p>
+                Robotics, as it currently stands, is at a wonderful point in the history of technology. The limiting factors of robotics were frequently intelligence, as well as component size and efficiency. The advancement of artificial intelligence has created possibilities which a hundred years ago we could only have dreamt of. Robotics, currently, has developed into a field with nearly limitless possibilities in just the last 10 years. We now have robotic vacuums, robotic dishwashing machines, we have robotic cars which can drive themselves. We have robotic factory workers, which can assemble all types of products from simple products to advanced products like cars. There are advanced robotic dogs like "Spot" and military vehicles. From this we can see that the possibilities of robotics are endless.There are robots in this day and age to do anything that you would like to do. What a wonderful age we live in! 
+            </p>
+        </section>
+        <section class="picture-area">
+            <h2>The Robots Of Today</h2>
+            <div class="slideshow">
+                <img id="slide" src="images/spot-climbs-stairs-min.jpg" alt="Robotics Slide" loading="lazy">
+                <div class="slideshow-controls">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <section class="form-area">
+            <h2>Feedback Form</h2>
+            <form id="offlineForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+                <span id="formStatus"></span>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> Bradley Gregersen, Idaho</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/project.js"></script>
+
+</body>
+</html>

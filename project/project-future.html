@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The State of Robotics</title>
+    <link rel="stylesheet" href="styles/project.css">
+
+</head>
+<body class="future-page">
+        <header>
+            <nav>
+                <button class="hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+                <div class="nav-links">
+                    <a href="project-future.html" class="current-page" >The Future of Robotics</a>
+                    <a href="project-history.html"  >The History of Robotics</a>
+                    <a href="project.html" >The State of Robotics Today</a>
+                </div>
+            </nav>
+            <h1>The Future Possibilities of Robotics</h1>
+        </header>
+    <main>
+        <section class="text-area">
+            <h2>
+                Information About The Future Of Robotics
+            </h2>
+            <p>
+                The future of robotics looks magnificent. The possibilities which we will see come to pass in the next 50 years will defy all belief. We will see the advent of personal humanoid robots. Everyone will have their own humanoid-style robot to assist them in daily tasks. With the advent of humanoid robots will come replacement of almost all manual labor. We will see the creation of entirely robotic farm hands which, if done correctly, could be the solution to world hunger. The right robot could be deployed in any location and perform a soil analysis and general nutrient analysis of the soil and could then choose varietals of seeds which are conducive to growing in that soil. That same robot could then plant and water the ground as well as maintain the vegetation until harvest. Such a robot could even have water purification systems built into it to allow farming where there is not easy access to clean water. We will see the advent of robotic nurses and doctors who will be capable of running many millions of analyses in an extremely short period of time to determine exactly what your ailment is and the specific way to repair it. We will see the advent of microscopic robots capable of building, healing, and destroying on a microscopic level. There are nanobots in the works that are designed to eat plastic, microplastic to be specific, and they could be the solution to a worldwide epidemic of plastic pollution within our bodies. I believe wholeheartedly that there will not be any aspect of human life that will remain the same once robotics become more ubiquitous. All of this leaves us with a great responsibility to use these tools responsibly and with great care.
+            </p>
+        </section>
+        <section class="picture-area">
+            <h2>The Robots Of Today</h2>
+            <div class="slideshow">
+                <img id="slide3" src="images/spot-climbs-stairs-min.jpg" alt="Robotics Slide" loading="lazy">
+                <div class="slideshow-controls">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <section class="form-area">
+            <h2>Feedback Form</h2>
+            <form id="offlineForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+                <span id="formStatus"></span>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> Bradley Gregersen, Idaho</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/project.js"></script>
+
+</body>
+</html>

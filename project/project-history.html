@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The State of Robotics</title>
+    <link rel="stylesheet" href="styles/project.css">
+
+</head>
+<body class="history-page">
+        <header>
+            <nav>
+                <button class="hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+                <div class="nav-links">
+                    <a href="project-history.html" class="current-page" >The History of Robotics</a>
+                    <a href="project-future.html">The Future of Robotics</a>
+                    <a href="project.html" >The State of Robotics Today</a>
+                </div>
+            </nav>
+            <h1>The History of Robotics</h1>
+        </header>
+    <main>
+        <section class="text-area">
+            <h2>
+                Information About The History Of Robotics
+            </h2>
+            <p>
+                The History of Robotics is a vast and storied one! Automatons have been referenced in one form or another for thousands of years!Since the beginning of time, humans have been fascinated with autonomy or more specifically autonomous mechanisms. From the ancient Greeks, to the clockwork mechanists of the Middle Ages, to the mechanical engines we use in our cars every day, Inventors throughout all history have Automated and fabricated wonderful mechanical creations that made life easier. It can even be said that robotics is the art of automation, and so can be traced back to even the gardens of Babylon, which were said to have automatically watered themselves. Once clockwork mechanisms were discovered, humanoid automatons became a reality, although they were limited by what could be mechanically programmed into their individual mechanisms. One of my most favorite historical mechanisms is the Anticathera Mechanism, which is said to be over 2,000 years old and to function as a basic computer, fully mechanically. The great inventor and artist, Leonardo Da Vinci, created many plans and drawings of Clockwork Automata, which have been recreated and shown to be viable designs and prove functional in many cases. In ancient Greek mythology Talos was Haephesto's guardian automaton. Ancient automata came in many different shapes and sizes, some as small as jewelry boxes and others the size of small cars. We can look back upon these many creations of those gone before and be grateful for the legacy that they left us that inevitably led to the creation of modern robotics technologies. 
+            </p>
+        </section>
+        <section class="picture-area">
+            <h2>The Robots of The Past</h2>
+            <div class="slideshow">
+                <img id="slide2" src="images/automata_cleveland_fountain_EDIT.jpg" alt="Robotics Slide" loading="lazy">
+                <div class="slideshow-controls">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <section class="form-area">
+            <h2>Feedback Form</h2>
+            <form id="offlineForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+                <span id="formStatus"></span>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentyear"></span> Bradley Gregersen, Idaho</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/project.js"></script>
+
+</body>
+</html>
