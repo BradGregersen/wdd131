@@ -47,7 +47,6 @@ header h1 {
     transition: color 0.3s, font-size 0.3s;
 }
 
-
 nav {
     width: 100vw;
     margin-left: 50%;
@@ -100,15 +99,23 @@ main {
     line-height: 1.7;
 }
 
+
 .picture-area {
     min-height: 180px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: var(--picture-area-text);
     font-style: italic;
-    background: linear-gradient(135deg, #e3eafc 0%, #f5f7fa 100%);
+    background: linear-gradient(135deg, #fff 0%, #fff 100%);
 }
+
+.picture-area h2 {
+    margin-bottom: 18px;
+    font-style: normal;
+}
+
 
 .current-page {
     font-weight: bold;
