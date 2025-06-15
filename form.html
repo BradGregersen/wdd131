@@ -7,26 +7,38 @@
         <meta name="description" content="Submit your Mobile phone product review, rate features, and share your opinions with this handy product review form.">
         <meta name="author" content="Bradley Gregersen">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+        </noscript>
+
+        <link rel="stylesheet" href="styles/form.css">
     </head>
 <body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+    </nav>
+
     <h1>Product Review Form</h1>
-    <p id="reviewCount"></p>
     <form method="get" action="form.html" autocomplete="on">
 
         <div class="form-group">
             <label for="productName">Product Name<span aria-hidden="true">*</span></label>
             <select id="productName" name="productName" required tabindex="1">
                 <option value="" disabled selected>Choose a device</option>
-
             </select>
         </div>
 
-
         <div class="form-group">
             <label>Overall Rating<span aria-hidden="true">*</span></label>
-            <div class="stars" style="direction: rtl;">
+            <div class="stars">
                 <input type="radio" id="star5" name="rating" value="5" required tabindex="2"><label for="star5" title="5 stars">&#9733;</label>
                 <input type="radio" id="star4" name="rating" value="4" tabindex="3"><label for="star4" title="4 stars">&#9733;</label>
                 <input type="radio" id="star3" name="rating" value="3" tabindex="4"><label for="star3" title="3 stars">&#9733;</label>
@@ -35,41 +47,46 @@
             </div>
         </div>
 
-
         <div class="form-group">
             <label for="installDate">Date of Purchase<span aria-hidden="true">*</span></label>
             <input type="date" id="installDate" name="installDate" required tabindex="7">
         </div>
 
-
         <div class="form-group">
             <label>Useful Features (check all that apply):</label>
-            <input type="checkbox" id="feature1" name="features" value="Durable" tabindex="8">
-            <label for="feature1">Durable</label>
-            <input type="checkbox" id="feature2" name="features" value="Aftermarket support" tabindex="9">
-            <label for="feature2">Aftermarket support</label>
-            <input type="checkbox" id="feature3" name="features" value="Economical" tabindex="10">
-            <label for="feature3">Economical</label>
-            <input type="checkbox" id="feature4" name="features" value="Aesthetics" tabindex="11">
-            <label for="feature4">Aesthetics</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature1" name="features" value="Durable" tabindex="8">
+                <label for="feature1">Durable</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature2" name="features" value="Aftermarket support" tabindex="9">
+                <label for="feature2">Aftermarket support</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature3" name="features" value="Economical" tabindex="10">
+                <label for="feature3">Economical</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature4" name="features" value="Aesthetics" tabindex="11">
+                <label for="feature4">Aesthetics</label>
+            </div>
         </div>
-
 
         <div class="form-group">
             <label for="writtenReview">Written Review:</label>
             <textarea id="writtenReview" name="writtenReview" rows="4" cols="40" tabindex="12"></textarea>
         </div>
 
-
         <div class="form-group">
             <label for="userName">Your Name:</label>
             <input type="text" id="userName" name="userName" tabindex="13">
         </div>
 
-
         <div class="form-group">
             <input type="submit" value="Submit Review" tabindex="14">
         </div>
+
+        <div id="reviewCount" class="review-count-label">You have submitted 22 review(s).</div>
     </form>
 
     <footer>
