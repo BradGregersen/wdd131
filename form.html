@@ -7,14 +7,9 @@
         <meta name="description" content="Submit your Mobile phone product review, rate features, and share your opinions with this handy product review form.">
         <meta name="author" content="Bradley Gregersen">
 
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" media="print" onload="this.media='all'">
-        <noscript>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-        </noscript>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="styles/form.css">
     </head>
@@ -27,7 +22,7 @@
     </nav>
 
     <h1>Product Review Form</h1>
-    <form method="get" action="form.html" autocomplete="on">
+    <form method="get" action="review.html" autocomplete="on">
 
         <div class="form-group">
             <label for="productName">Product Name<span aria-hidden="true">*</span></label>
@@ -83,7 +78,7 @@
         </div>
 
         <div class="form-group">
-            <input type="submit" value="Submit Review" tabindex="14">
+            <input type="submit" value="Submit" tabindex="14">
         </div>
 
         <div id="reviewCount" class="review-count-label">You have submitted 22 review(s).</div>
@@ -94,6 +89,6 @@
         <p id="lastModified"></p>
     </footer>
 
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>
